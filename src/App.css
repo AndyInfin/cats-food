@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Exo 2.0";
+    src: url("/fonts/Exo2.0-Thin.otf") format("otf");
+}
+
+.App {
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    background: url('/images/Pattern.png') repeat 50% 50%;
+}
+
+header > h1 {
+    color: #fff;
+    font-family: 'Exo 2.0';
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.Cat-food {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cat-food > *:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.Buy-link {
+    color: #1698d9;
+    text-decoration: underline dashed;
+}
+
+.Buy-link:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+    .Cat-food {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Cat-food > * {
+        margin: 0 1em 1em;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+}
